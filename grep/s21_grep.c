@@ -339,6 +339,7 @@ void use_o_flag(regmatch_t match[1], char *buff, regex_t *regex,
       for (int k = 0; k < match_count; k++) {
         if (matches[k].start == start && matches[k].end == end) {
           duplicate = 1;
+          break;
         }
       }
       if (!duplicate && match_count < 1000) {
@@ -368,3 +369,4 @@ void use_o_flag(regmatch_t match[1], char *buff, regex_t *regex,
   }
   if (match_count > 0) *matched = 1;
 }
+
