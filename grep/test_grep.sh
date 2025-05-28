@@ -25,7 +25,7 @@ do
               echo "$TEST1" >> log.txt
               (( COUNTER_FAIL++ ))
           fi
-          rm s21_grep.txt grep.txt
+          rm my_grep.txt grep.txt
 
           TEST2="for grep.c $var $var2 $var3"
           echo "$TEST2"
@@ -67,7 +67,7 @@ do
               echo "$TEST4" >> log.txt
               (( COUNTER_FAIL++ ))
           fi
-          rm s21_grep.txt grep.txt
+          rm my_grep.txt grep.txt
 
           TEST5="-e regex -e ^print grep.c $var $var2 $var3 -f pattern.txt"
           echo "$TEST5"
