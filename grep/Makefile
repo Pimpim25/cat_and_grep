@@ -18,9 +18,9 @@ s21_grep: $(OBJ)
 
 clean:
 ifeq ($(OS),Windows_NT)
-	del /Q /F *.o s21_grep.exe
+	del /Q /F *.o grep.exe
 	cmd /c "cd ..\common && del /Q /F *.o"
 	cmd /c "cd ..\cat && del /Q /F *.o *.exe"
 else
-	rm -f *.o s21_grep ../common/*.o ../cat/*.o ../cat/s21_cat
+	rm -f *.o grep ../common/*.o ../cat/*.o ../cat/cat
 endif
