@@ -71,7 +71,7 @@ do
 
           TEST5="-e regex -e ^print grep.c $var $var2 $var3 -f pattern.txt"
           echo "$TEST5"
-          ./grep $TEST5 > s21_grep.txt
+          ./grep $TEST5 > my_grep.txt
           grep $TEST5 > grep.txt
           DIFF_RES="$(diff -s my_grep.txt grep.txt)"
           if [ "$DIFF_RES" == "Files my_grep.txt and grep.txt are identical" ]
