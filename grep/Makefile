@@ -10,7 +10,7 @@ else
     LIBS =
 endif
 
-s21_grep: $(OBJ)
+grep: $(OBJ)
 	$(CC) $(CFLAGS) $^ -o $@ $(LIBS)
 
 %.o: %.c
