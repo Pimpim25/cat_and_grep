@@ -4,7 +4,7 @@ CFLAGS = -Werror -Wextra -Wall -std=c11
 CAT_C= $(wildcard *.c) $(wildcard ../common/*.c)
 OBJ= $(CAT_C:.c=.o)
 
-s21_cat: $(OBJ)
+cat: $(OBJ)
 	$(CC) $(CFLAGS) $^ -o $@
 
 %.o: %.c
